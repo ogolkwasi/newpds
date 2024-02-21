@@ -667,7 +667,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #about {
-  background: linear-gradient(to bottom right, #ff5faf, #ffffff, #ccffff); /* Pink gradient background */
+  background: linear-gradient(to bottom left, #ff5faf, #fbfcfc,#470f2b); /* Pink gradient background */
   
   overflow: hidden;
   position: relative;
@@ -720,7 +720,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #speakers {
   padding: 60px 0 30px 0;
-  background: linear-gradient(to bottom, #e90276, #470f2b);
+  background: linear-gradient(to bottom left, #ff5faf, #ffffff, #ccffff);
   position: relative; /* Make the section relative for positioning of polkadots */
   overflow: hidden; /* Hide overflowing polkadots */
   overflow-x: hidden;
@@ -866,7 +866,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #schedule {
   padding: 60px 0;
-  background: linear-gradient(to bottom, #470f2b, #da006d); /* Pinkish fade gradient background */
+  background: linear-gradient(to bottom,#b9f9ffca, #751947da, #da006d); /* Pinkish fade gradient background */
   position: relative; /* Make the section relative for positioning of polkadots */
   overflow: hidden; /* Hide overflowing polkadots */
   overflow-x: hidden;
@@ -1091,7 +1091,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Gallery Section
 /* Gallery Section */
 #gallery {
-  background: linear-gradient(to bottom, #ffffff00, #470f2b, #ffffff00);
+  background: linear-gradient(to bottom, #da006d, #ffb6da, #ffffff00);
   padding: 50px 0; /* Add padding to the top and bottom */
   overflow-x: hidden;
 }

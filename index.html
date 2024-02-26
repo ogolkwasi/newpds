@@ -106,6 +106,18 @@
       </div>
     </section>
 
+
+
+        <!-- Popup Modal -->
+<div id="popupModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Register for Campus Mixers!</h2>
+    <p>Sign up to get access and join The Education Programme  and updates on Polkadot Savannah .</p>
+    <a href="registration.html">Register Now</a>
+  </div>
+</div>
+
     <!--==========================
       Speakers Section
     ============================-->
@@ -1031,27 +1043,39 @@
 
 <!-- Owl Carousel JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
 <script>
-  // Initialize Owl Carousel for the gallery
-  $(document).ready(function() {
-    $(".gallery-carousel").owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: true,
-      autoplay: true,
-      autoplayHoverPause: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 2
-        },
-        1000: {
-          items: 4
-        }
-      }
-    });
+
+  //popup js//
+  document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(openModal, 3000); // Open modal after 3 seconds
   });
-</script>
+  
+  function openModal() {
+    document.getElementById("popupModal").style.display = "block";
+  }
+  
+  function closeModal() {
+    document.getElementById("popupModal").style.display = "none";
+  }
+    // Initialize Owl Carousel for the gallery
+    $(document).ready(function() {
+      $(".gallery-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 4
+          }
+        }
+      });
+    });
+  </script>

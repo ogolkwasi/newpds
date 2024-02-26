@@ -106,18 +106,6 @@
       </div>
     </section>
 
-
-
-        <!-- Popup Modal -->
-<div id="popupModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <h2>Register for Campus Mixers!</h2>
-    <p>Sign up to get access and join The Education Programme  and updates on Polkadot Savannah .</p>
-    <a href="registration.html">Register Now</a>
-  </div>
-</div>
-
     <!--==========================
       Speakers Section
     ============================-->
@@ -761,7 +749,7 @@
               </div>
             </li>
 
-            <!-- Repeat similar list items for other FAQs -->
+            <!- Repeat similar list items for other FAQs -->
             <!-- <li>
               <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="fa fa-minus-circle"></i></a>
               <div id="faq2" class="collapse" data-parent="#faq-list">
@@ -924,14 +912,14 @@
             -->
 
             <!--
-          </div><!-- /.modal-content -->
+          </div><!- /.modal-content -->
         <!--
-        </div><!-- /.modal-dialog -->
-      -->
-      </div><!-- /.modal -->
+        </div><!- /.modal-dialog -->
+      
+     <!-- </div><!- /.modal -->
     
     </section>
-  -->
+  
     <!--==========================
       Contact Section
     ============================-->
@@ -1043,39 +1031,27 @@
 
 <!-- Owl Carousel JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script>
 
-  //popup js//
-  document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(openModal, 3000); // Open modal after 3 seconds
-  });
-  
-  function openModal() {
-    document.getElementById("popupModal").style.display = "block";
-  }
-  
-  function closeModal() {
-    document.getElementById("popupModal").style.display = "none";
-  }
-    // Initialize Owl Carousel for the gallery
-    $(document).ready(function() {
-      $(".gallery-carousel").owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        autoplay: true,
-        autoplayHoverPause: true,
-        responsive: {
-          0: {
-            items: 1
-          },
-          600: {
-            items: 2
-          },
-          1000: {
-            items: 4
-          }
+<script>
+  // Initialize Owl Carousel for the gallery
+  $(document).ready(function() {
+    $(".gallery-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 4
         }
-      });
+      }
     });
-  </script>
+  });
+</script>

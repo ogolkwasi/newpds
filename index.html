@@ -1043,25 +1043,38 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 <script>
-  // Initialize Owl Carousel for the gallery
-  $(document).ready(function() {
-    $(".gallery-carousel").owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: true,
-      autoplay: true,
-      autoplayHoverPause: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 2
-        },
-        1000: {
-          items: 4
-        }
-      }
-    });
+
+  //popup js//
+  document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(openModal, 3000); // Open modal after 3 seconds
   });
-</script>
+  
+  function openModal() {
+    document.getElementById("popupModal").style.display = "block";
+  }
+  
+  function closeModal() {
+    document.getElementById("popupModal").style.display = "none";
+  }
+    // Initialize Owl Carousel for the gallery
+    $(document).ready(function() {
+      $(".gallery-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 4
+          }
+        }
+      });
+    });
+  </script>
